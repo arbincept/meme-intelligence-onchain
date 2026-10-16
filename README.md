@@ -1,6 +1,6 @@
 # Meme Intelligence
 
-[![CI](https://github.com/Lukecele/meme-intelligence-onchain/actions/workflows/ci.yml/badge.svg)](https://github.com/Lukecele/meme-intelligence-onchain/actions/workflows/ci.yml)
+[![CI](https://github.com/arbincept/meme-intelligence-onchain/actions/workflows/ci.yml/badge.svg)](https://github.com/arbincept/meme-intelligence-onchain/actions/workflows/ci.yml)
 
 **Explore Solana wallets, liquidity & market data.**
 
@@ -39,7 +39,7 @@ The CLI database is not automatically synchronized with every dashboard view. Se
 Use Python 3.10+ (CI uses 3.12). For the optional dashboard, use a Node.js version compatible with Next.js 14 (minimum 18.17) and npm.
 
 ```bash
-git clone https://github.com/Lukecele/meme-intelligence-onchain.git
+git clone https://github.com/arbincept/meme-intelligence-onchain.git
 cd meme-intelligence-onchain
 python3 -m venv .venv
 source .venv/bin/activate
@@ -127,6 +127,6 @@ python -m compileall -q .
 
 These checks exercise local behavior, not live API availability. Other scripts named `test_*` may call providers. See [contribution guidance](CONTRIBUTING.md) and [security policy](SECURITY.md).
 
-If this research is useful, [star the repository](https://github.com/Lukecele/meme-intelligence-onchain) or [follow Lukecele](https://github.com/Lukecele). Methodology improvements and reproducible data-quality reports are welcome.
+If this research is useful, [star the repository](https://github.com/arbincept/meme-intelligence-onchain) or [follow Lukecele](https://github.com/Lukecele). Methodology improvements and reproducible data-quality reports are welcome.
 
 [Technical abstract and sharing assets](docs/presentation.md) · [MIT license](LICENSE)
