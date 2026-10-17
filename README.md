@@ -1,5 +1,7 @@
 # Meme Intelligence
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Status: 100% Free & Open Source](https://img.shields.io/badge/Status-100%25%20Free%20%26%20Open%20Source-gold)](LICENSE)
 [![CI](https://github.com/arbincept/meme-intelligence-onchain/actions/workflows/ci.yml/badge.svg)](https://github.com/arbincept/meme-intelligence-onchain/actions/workflows/ci.yml)
 
 **Explore Solana wallets, liquidity & market data.**
