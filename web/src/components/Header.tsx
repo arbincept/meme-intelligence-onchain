@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Radio, ShieldCheck, Database, Zap, FileSpreadsheet, Award, Wifi, ChevronDown } from "lucide-react";
+import { Radio, ShieldCheck, Database, Zap, FileSpreadsheet, Award, Wifi, ChevronDown, Star } from "lucide-react";
 import validation from "../lib/validation_result.json";
 import { SMART_WALLETS } from "../lib/data";
 
@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
             </div>
           </div>
 
-          {/* Desktop Status Chips / Mobile Toggle */}
+          {/* Desktop Status Chips & Star button */}
           <div className="hidden lg:flex items-center gap-2 text-xs font-mono">
             <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-zinc-900/80 border border-zinc-800 text-zinc-300">
               <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
@@ -77,17 +77,39 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
               <span>Pyth:</span>
               <span className="text-emerald-400 font-semibold">Live</span>
             </div>
+            <a
+              href="https://github.com/arbincept/meme-intelligence-onchain"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 hover:text-amber-300 border border-amber-500/30 transition-all font-sans font-semibold ml-1 shadow-sm"
+              title="Star on GitHub"
+            >
+              <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+              <span>Star on GitHub</span>
+            </a>
           </div>
 
-          {/* Mobile Status Button */}
-          <button
-            onClick={() => setShowApiStatus(!showApiStatus)}
-            className="lg:hidden flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-zinc-900 border border-zinc-800 text-[11px] font-mono text-emerald-400 shrink-0"
-          >
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>API Online</span>
-            <ChevronDown className={`w-3 h-3 text-zinc-400 transition-transform ${showApiStatus ? "rotate-180" : ""}`} />
-          </button>
+          {/* Mobile Right Actions */}
+          <div className="lg:hidden flex items-center gap-1.5 shrink-0">
+            <a
+              href="https://github.com/arbincept/meme-intelligence-onchain"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/30 text-[11px] font-semibold"
+              title="Star on GitHub"
+            >
+              <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+              <span>Star</span>
+            </a>
+            <button
+              onClick={() => setShowApiStatus(!showApiStatus)}
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-zinc-900 border border-zinc-800 text-[11px] font-mono text-emerald-400 shrink-0"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>API Online</span>
+              <ChevronDown className={`w-3 h-3 text-zinc-400 transition-transform ${showApiStatus ? "rotate-180" : ""}`} />
+            </button>
+          </div>
         </div>
 
         {/* Mobile Expandable API Status Bar */}

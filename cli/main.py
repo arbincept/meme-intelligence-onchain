@@ -14,7 +14,10 @@ async def ingest(limit):
     finally: await e.close()
 def backtest(): print(json.dumps(BacktestValidator(Database()).run_full_validation(),indent=2))
 def oos(): print(json.dumps(OutOfSampleValidator(DATA_DIR/'onchain_intelligence.db').run_blind_test(),indent=2))
+def print_banner():
+    print("⭐ Meme Intelligence | Star us on GitHub: https://github.com/arbincept/meme-intelligence-onchain\n")
 def main():
+    print_banner()
     p=argparse.ArgumentParser(); sp=p.add_subparsers(dest='cmd',required=True)
     sp.add_parser('init-db'); ing=sp.add_parser('ingest-first-buyers');ing.add_argument('--limit',type=int,default=1000);sp.add_parser('backtest');sp.add_parser('oos')
     a=p.parse_args();

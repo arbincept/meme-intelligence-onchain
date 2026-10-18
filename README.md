@@ -6,6 +6,9 @@
 
 **Explore Solana wallets, liquidity & market data.**
 
+> [!TIP]
+> **Enjoying this on-chain research toolkit?** If you find this framework useful or clone it for your own research, please consider giving it a ⭐ **Star** on GitHub (top right) to support continuous open-source development!
+
 An experimental research toolkit by [Luca Celebrano (@Lukecele)](https://github.com/Lukecele), founder and sole member of arbincept. Investigate early buyer cohorts, wallet funding relationships and market context, then examine whether observed patterns survive historical checks.
 
 ![Meme Intelligence — Explore Solana wallets, liquidity & market data — by Lukecele](docs/assets/social-card.png)
